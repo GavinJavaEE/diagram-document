@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7C3AED" />
+
+    <title>DiagramAI - AI 驱动的图表创作平台 | 流程图 时序图 甘特图 ER图</title>
+    <meta name="description" content="DiagramAI 是一款 AI 驱动的图表创作工具，支持流程图、时序图、甘特图、ER图、类图、状态图等多种图表类型。使用 Mermaid 语法，通过代码或 AI 描述即可快速绘制专业的架构图与业务图。免费在线使用，无需安装。" />
+    <meta name="keywords" content="DiagramAI, Mermaid, 流程图, 时序图, 甘特图, ER图, 类图, 状态图, AI绘图, 图表工具, 代码绘图, 在线图表, 架构图, 业务流程图, UML图" />
+    <meta name="author" content="DiagramAI" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://diagramai.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DiagramAI - AI 驱动的图表创作平台" />
+    <meta property="og:description" content="支持流程图、时序图、甘特图、ER图等多种图表类型，用代码或 AI 描述快速绘制专业的架构图与业务图。免费在线使用。" />
+    <meta property="og:site_name" content="DiagramAI" />
+    <meta property="og:url" content="https://diagramai.com/" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:image" content="/og-image.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DiagramAI - AI 驱动的图表创作平台" />
+    <meta name="twitter:description" content="支持流程图、时序图、甘特图、ER图等多种图表类型，用代码或 AI 描述快速绘制专业图表。" />
+    <meta name="twitter:image" content="/og-image.svg" />
+
+    <!-- 字体非阻塞加载：preconnect 提前建立 TLS，preload 异步获取 CSS，font-display:swap 避免阻塞首屏文本渲染 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <script>
+      (function() {
+        var stored = localStorage.getItem('theme-storage');
+        var theme = 'dark';
+        if (stored) {
+          try {
+            var parsed = JSON.parse(stored);
+            theme = parsed.state && parsed.state.theme || 'dark';
+          } catch (e) {}
+        }
+        document.documentElement.classList.add(theme);
+        if (document.body) {
+          document.body.style.backgroundColor = theme === 'dark' ? '#0F172A' : '#FFFFFF';
+          document.body.style.color = theme === 'dark' ? '#F8FAFC' : '#1E293B';
+        }
+      })();
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "DiagramAI",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "description": "AI 驱动的图表创作工具，支持流程图、时序图、甘特图、ER图等多种图表类型。",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

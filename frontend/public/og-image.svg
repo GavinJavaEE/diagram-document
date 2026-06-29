@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E1B4B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#312E81;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C084FC;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <circle cx="100" cy="100" r="80" fill="#8B5CF6" opacity="0.1"/>
+  <circle cx="1100" cy="550" r="120" fill="#C084FC" opacity="0.1"/>
+  <circle cx="900" cy="80" r="40" fill="#A78BFA" opacity="0.15"/>
+  <circle cx="150" cy="500" r="60" fill="#7C3AED" opacity="0.1"/>
+
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="90" height="90" rx="20" fill="url(#logoGrad)" filter="url(#glow)"/>
+    <path d="M 20 30 L 45 55 L 20 80" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 45 55 L 70 30" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 45 55 L 70 80" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <text x="80" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="800" fill="white">DiagramAI</text>
+
+  <text x="80" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#C4B5FD">AI 驱动的图表创作平台</text>
+
+  <g transform="translate(80, 370)">
+    <rect x="0" y="0" width="160" height="50" rx="12" fill="rgba(139, 92, 246, 0.3)" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="80" y="32" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#E9D5FF">流程图</text>
+
+    <rect x="180" y="0" width="160" height="50" rx="12" fill="rgba(34, 197, 94, 0.2)" stroke="#22C55E" stroke-width="2"/>
+    <text x="260" y="32" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#BBF7D0">时序图</text>
+
+    <rect x="360" y="0" width="160" height="50" rx="12" fill="rgba(234, 179, 8, 0.2)" stroke="#EAB308" stroke-width="2"/>
+    <text x="440" y="32" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#FEF08A">甘特图</text>
+
+    <rect x="540" y="0" width="160" height="50" rx="12" fill="rgba(6, 182, 212, 0.2)" stroke="#06B6D4" stroke-width="2"/>
+    <text x="620" y="32" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#A5F3FC">ER图</text>
+
+    <rect x="720" y="0" width="160" height="50" rx="12" fill="rgba(236, 72, 153, 0.2)" stroke="#EC4899" stroke-width="2"/>
+    <text x="800" y="32" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#FBCFE8">类图</text>
+  </g>
+
+  <text x="80" y="540" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#A5B4FC">Mermaid 语法 · 实时预览 · AI 辅助创作 · 一键导出</text>
+
+  <text x="80" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#818CF8">diagramai.com</text>
+
+  <g transform="translate(950, 380)" opacity="0.4">
+    <circle cx="30" cy="60" r="25" fill="#8B5CF6" stroke="#C4B5FD" stroke-width="2"/>
+    <text x="30" y="65" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="white">开始</text>
+
+    <path d="M 30 85 L 30 115" stroke="#C4B5FD" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <polygon points="0,120 60,120 60,160 0,160 30,180 0,160" fill="#7C3AED" stroke="#C4B5FD" stroke-width="2"/>
+    <text x="30" y="148" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="white">判断</text>
+
+    <path d="M 60 150 L 100 150" stroke="#C4B5FD" stroke-width="2"/>
+
+    <rect x="100" y="130" width="60" height="40" rx="4" fill="#6D28D9" stroke="#C4B5FD" stroke-width="2"/>
+    <text x="130" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="white">处理</text>
+  </g>
+</svg>
